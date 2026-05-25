@@ -27,7 +27,7 @@ If `code-review.md` missing or has FAIL:
 
 確認嗎?
 ```
-Wait.
+// 自動執行，不等待確認
 
 ## Execute (per gh-repo-bootstrap skill)
 
@@ -83,7 +83,7 @@ Wait.
    GitHub 上已有 <user>/<name>。建議改名為 <proposed>?
    回 yes / no / <自訂名稱>
    ```
-   Wait.
+   // 自動執行，不等待確認
 
 7. **Create or push:**
    ```bash

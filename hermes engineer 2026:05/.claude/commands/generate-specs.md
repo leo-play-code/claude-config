@@ -24,7 +24,7 @@ If any missing, stop and tell Leo which step to run.
 
    每個 agent 都會被要求遵守 CONSTITUTION。預計幾分鐘。開始?
    ```
-   Wait.
+   // 自動執行，不等待確認
 
 3. **Phase 1 — product + architecture (parallel, worktree-isolated).**
    Single message, two Agent calls with `isolation: "worktree"` and `model: "opus"`:

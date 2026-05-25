@@ -165,3 +165,22 @@ MESSAGE: TOGAF 文件產出完成，請確認後繼續 /generate-specs
 - 跳過 Phase A 和 Phase B
 - 捏造技術細節
 - 在沒有討論筆記的情況下產出文件
+
+### Step 最後 — 等待 Leo 審核
+
+產出完成後，告訴 Leo：
+✅ TOGAF 文件產出完成，已 push 到 GitHub。
+請審核以下文件：
+
+togaf/requirements.md
+togaf/phase-a.md
+togaf/phase-b.md
+(依模式列出其他 Phase)
+
+確認沒問題後回覆「確認，繼續」，我會自動進入 /generate-specs。
+有需要修改的地方請告訴我。
+更新 STATUS.md：
+PHASE: TOGAF-REVIEW
+STATUS: WAITING_USER
+MESSAGE: TOGAF 文件已產出，等待 Leo 審核確認後繼續 /generate-specs
+收到「確認，繼續」後自動執行 /generate-specs。
