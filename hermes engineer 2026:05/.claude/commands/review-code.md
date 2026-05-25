@@ -30,7 +30,7 @@ If `running > 0`, hard stop and tell Leo to clean up first.
 
    開始?
    ```
-   Wait.
+   // 自動開始，不等待確認
 
 2. **Phase 1 — parallel code + security review** (worktree-isolated, single message, `model: "opus"`):
    - `code-reviewer`: full codebase + CONSTITUTION + all specs
@@ -81,7 +81,9 @@ If `running > 0`, hard stop and tell Leo to clean up first.
     ```
     ✅ 全部審查通過。下一步: /git-push 推上 GitHub。
     ```
-  - Any FAIL:
+  - Any FAIL (一般問題):
+    自動修復後重跑審查，不問 Leo。
+  - Any FAIL (架構問題):
     ```
     ⚠️ 審查發現 <N> 個 blocker:
     <each one line>
@@ -99,6 +101,8 @@ If `running > 0`, hard stop and tell Leo to clean up first.
 - Smoke test fails because dev server doesn't start → ask Leo whether to debug or skip
 
 ### 🚫 Never do
-- Auto-fix issues
+- Auto-fix 架構層問題（設計決策類）— 這類必須問 Leo
+- 一般 code 問題（lint、格式、小 bug）→ 自動修，修完重跑審查
+- 同一問題修超過 2 次還失敗 → 停下來問 Leo
 - `git push`
 - Skip phases on time pressure
