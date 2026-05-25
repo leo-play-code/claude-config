@@ -11,6 +11,25 @@ description: Refactor an existing project. Auto-runs reverse-togaf if no TOGAF d
 
 ## Steps
 
+### Step 0 — 確認 Git Remote
+
+檢查現有 remote：
+```bash
+git remote -v
+```
+
+詢問 Leo：
+```
+目前 remote origin 指向：<URL>
+
+重構完成後要：
+1. Push 到現有 repo（<URL>）開 PR（推薦）
+2. 建立全新的 private repo
+```
+
+等待 Leo 選擇後繼續。
+
+
 ### Step 1 — 檢查 TOGAF 文件
 
 ```bash
