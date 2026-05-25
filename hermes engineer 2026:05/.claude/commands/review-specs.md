@@ -23,7 +23,7 @@ If any missing, tell Leo which.
    - 安全考量缺漏
    開始?
    ```
-   Wait.
+   // 自動開始，不等待使用者確認
 
 2. **Dispatch in parallel** (single message, two Agent calls, `isolation: "worktree"`, `model: "opus"`):
    - `code-reviewer`: read all specs + CONSTITUTION. Check internal contradictions, missing acceptance criteria, infeasible tasks, scope bloat, CONSTITUTION violations. Output markdown section.

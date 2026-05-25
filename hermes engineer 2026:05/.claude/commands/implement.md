@@ -55,7 +55,7 @@ If batch is empty:
 - ...
 開始?
 ```
-Wait for confirmation.
+// 自動開始，不等待確認
 
 ### Step C-prep — build batch-shared static prefix (B1 + A2)
 
@@ -329,7 +329,7 @@ If a layer just completed, print the corresponding milestone checklist below and
   → QA 可以跑 contract + integration test
   → 你可以體驗 AI 問答品質，決定是否需要調整 prompt 或 rerank 參數
 
-驗收通過請回覆「繼續」，有問題請回覆「停止」並說明。
+如果有問題請告訴我，否則自動繼續下一個 layer。
 ```
 
 ---
@@ -373,7 +373,7 @@ If a layer just completed, print the corresponding milestone checklist below and
   → 可以給內部用戶試用，收集第一手反饋
   → 可以開始決定 v2 feature 優先順序
 
-驗收通過請回覆「繼續」，有問題請回覆「停止」並說明。
+如果有問題請告訴我，否則自動繼續下一個 layer。
 ```
 
 ---
@@ -406,7 +406,7 @@ If a layer just completed, print the corresponding milestone checklist below and
   → /review-code 的 smoke test phase 可以跑
   → 準備好做 DevOps（CI/CD + 部署）
 
-驗收通過請回覆「繼續」，有問題請回覆「停止」並說明。
+如果有問題請告訴我，否則自動繼續下一個 layer。
 ```
 
 ---
@@ -446,7 +446,7 @@ If a layer just completed, print the corresponding milestone checklist below and
   → 可以跑 /git-push 推上 GitHub
   → 準備好實際部署到 Fly.io + Vercel
 
-驗收通過請回覆「繼續」，有問題請回覆「停止」並說明。
+如果有問題請告訴我，否則自動繼續下一個 layer。
 ```
 
 ---
